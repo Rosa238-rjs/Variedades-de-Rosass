@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Variedades de Rosas</title>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --accent: #e6b0b7;
+      --overlay: rgba(0, 0, 0, 0.65);
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: #fff;
+      background: var(--bg);
+      overflow-x: hidden;
+    }
+    .background {
+      position: fixed;
+      inset: 0;
+      background-image: url('https://cdn.pixabay.com/photo/2016/04/01/12/16/rose-1307657_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(40%);
+      z-index: 0;
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+      padding: 50px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.8rem;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    p.description {
+      font-size: 1.1rem;
+      color: #ddd;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      justify-content: center;
+    }
+    .rose-card {
+      background: var(--overlay);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+    .rose-card:hover {
+      transform: translateY(-8px);
+    }
+    .rose-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .rose-card h3 {
+      margin: 10px 0 5px;
+      color: var(--accent);
+    }
+    .rose-card p {
+      font-size: 0.9rem;
+      color: #ccc;
+      padding: 0 12px 15px;
+    }
+    footer {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #ddd;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="container">
+    <h1>Variedades de Rosas</h1>
+    <p class="description">
+      Descubre la belleza y diversidad de las rosas más admiradas del mundo. Cada variedad posee su propio encanto, color y significado.
+    </p>
+
+    <div class="grid">
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2014/07/31/22/50/rose-407029_1280.jpg" alt="Rosa roja">
+        <h3>Rosa Roja</h3>
+        <p>Símbolo del amor y la pasión. Es la más popular y apreciada en todo el mundo.</p>
+      </div>
+
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2015/03/26/10/03/rose-690341_1280.jpg" alt="Rosa blanca">
+        <h3>Rosa Blanca</h3>
+        <p>Representa pureza, inocencia y espiritualidad. Muy usada en bodas.</p>
+      </div>
+
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2017/08/01/00/45/roses-2565418_1280.jpg" alt="Rosa amarilla">
+        <h3>Rosa Amarilla</h3>
+        <p>Simboliza la amistad, alegría y energía positiva.</p>
+      </div>
+
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2016/11/23/18/39/pink-rose-1858197_1280.jpg" alt="Rosa rosada">
+        <h3>Rosa Rosada</h3>
+        <p>Asociada a la ternura, el cariño y la admiración.</p>
+      </div>
+
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2017/05/23/22/36/blue-roses-2336770_1280.jpg" alt="Rosa azul">
+        <h3>Rosa Azul</h3>
+        <p>Representa lo misterioso y lo imposible, símbolo de fantasía.</p>
+      </div>
+
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2018/02/27/19/15/black-rose-3188076_1280.jpg" alt="Rosa negra">
+        <h3>Rosa Negra</h3>
+        <p>Simboliza el misterio, la elegancia y los nuevos comienzos.</p>
+      </div>
+
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2014/12/15/17/17/orange-rose-569238_1280.jpg" alt="Rosa naranja">
+        <h3>Rosa Naranja</h3>
+        <p>Expresa entusiasmo, deseo y energía vibrante.</p>
+      </div>
+
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2016/05/17/22/09/lilac-rose-1391045_1280.jpg" alt="Rosa lila">
+        <h3>Rosa Lila</h3>
+        <p>Asociada al amor a primera vista y al encanto.</p>
+      </div>
+
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2017/03/01/17/21/green-rose-2118492_1280.jpg" alt="Rosa verde">
+        <h3>Rosa Verde</h3>
+        <p>Representa la armonía, fertilidad y equilibrio natural.</p>
+      </div>
+
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2020/04/28/14/07/peach-rose-5104900_1280.jpg" alt="Rosa durazno">
+        <h3>Rosa Durazno</h3>
+        <p>Transmite sinceridad, gratitud y simpatía.</p>
+      </div>
+
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2016/01/19/17/41/rose-1150109_1280.jpg" alt="Rosa coral">
+        <h3>Rosa Coral</h3>
+        <p>Simboliza deseo, entusiasmo y vitalidad.</p>
+      </div>
+
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2016/04/27/08/38/rose-1353929_1280.jpg" alt="Rosa bicolor">
+        <h3>Rosa Bicolor</h3>
+        <p>Sus pétalos combinan colores que reflejan dualidad y creatividad.</p>
+      </div>
+
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2020/02/12/20/26/champagne-rose-4843029_1280.jpg" alt="Rosa champaña">
+        <h3>Rosa Champaña</h3>
+        <p>Elegante y discreta, simboliza la modestia y el aprecio.</p>
+      </div>
+
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/04/09/rainbow-rose-1867283_1280.jpg" alt="Rosa arcoíris">
+        <h3>Rosa Arcoíris</h3>
+        <p>Representa la alegría, la diversidad y la creatividad.</p>
+      </div>
+
+      <div class="rose-card">
+        <img src="https://cdn.pixabay.com/photo/2021/05/13/17/23/rose-garden-6250935_1280.jpg" alt="Rosa de jardín">
+        <h3>Rosa de Jardín</h3>
+        <p>Clásica y abundante, ideal para embellecer cualquier espacio.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Rosa Rojas. Todos los derechos reservados.  
+    Contacto: 3212265507 | Correo: rosa.roru2002@gmail.com
+  </footer>
+</body>
+</html>
